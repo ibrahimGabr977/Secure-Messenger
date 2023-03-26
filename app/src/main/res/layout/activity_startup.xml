@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StartUpActivity"
+    android:background="@drawable/start_up_wallpaper">
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/startup_bg"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintVertical_bias="0.75"
+        >
+
+
+        <EditText
+            android:id="@+id/startup_edit_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:hint="Displaying Name"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="14sp"
+            android:textColor="@color/blackColor11"
+            android:textColorHint="@color/grayColor"
+            app:layout_constraintWidth_percent="0.85"
+            android:background="@drawable/startup_namebg"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="35dp"
+            />
+
+        <EditText
+            android:id="@+id/startup_edit_securityCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/startup_edit_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:hint="Security Code"
+            android:paddingEnd="25dp"
+            android:paddingStart="25dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:textSize="14sp"
+            android:textColor="@color/blackColor11"
+            android:textColorHint="@color/grayColor"
+            app:layout_constraintWidth_percent="0.85"
+            android:background="@drawable/startup_namebg"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="19dp"
+            android:inputType="textPassword"
+            />
+
+        <TextView
+            android:id="@+id/startup_create_account_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/startup_edit_securityCode"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:paddingTop="7dp"
+            android:paddingBottom="7dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#C4FEF7FF"
+            app:layout_constraintWidth_percent="0.85"
+            android:background="@drawable/startup_createbg"
+            android:text="Create Account"
+            android:gravity="center"
+            app:layout_constraintVertical_bias="0"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="35dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
